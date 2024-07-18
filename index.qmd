@@ -1,0 +1,90 @@
+---
+format:
+  revealjs: 
+    theme: [default, styles.scss]
+    width: 1280
+    height: 720
+    include-after-body: 
+      - "all-the-js-code.html"
+pagetitle: "Positron: A new IDE for Data Science"
+echo: false
+code-line-numbers: false
+---
+
+:::: r-fit-text
+[Positron]{.orbitron}
+:::
+
+:::: r-fit-text
+A new IDE for Data Science
+:::
+
+<br>
+
+:::: {style="text-align: right"}
+SoCal RUG  
+July 18th, 2024  
+Emil Hvitfeldt
+:::
+
+## What is Positron?
+
+- A next-generation data science IDE built by Posit PBC
+- An extensible, polyglot tool for writing code and exploring data
+- A familiar environment for reproducible authoring and publishing
+
+:::: footer
+<https://github.com/posit-dev/positron>
+:::
+
+## Is Positron for me?
+
+Positron is an early stage project under active development and may not yet be a good fit for you. If you are interested in experimenting with it, we welcome your feedback!
+
+:::: footer
+<https://github.com/posit-dev/positron/wiki#is-positron-for-me>
+:::
+
+## Good fit if
+
+- you use VS Code for data science (Python or R) but wish it included a dedicated console, variables pane, data explorer, and other affordances for your data-specific work.
+- you use Jupyterlab for data science (Python or R) and are ready for a more powerful, fully-featured IDE.
+- you use RStudio and want more ability to customize or extend your IDE.
+- you use additional languages in your day-to-day data science or package development work, like Rust, C++, JavaScript, or Lua.
+
+:::: footer
+<https://github.com/posit-dev/positron/wiki#is-positron-for-me>
+:::
+
+## Bad fit if?
+
+- you need stable, polished software. Positron is still in beta, and some features are unstable or unfinished.
+- you need all the features of the RStudio IDE. Positron doesn’t have all RStudio’s features; some notable absences are inline output for Quarto and R Markdown, profiling, Sweave, RStudio Add-In support, etc.
+- you use remote development features (e.g. dev containers, remote SSH); these are not supported in Positron yet. However, providing tools for Remote SSH is on our roadmap.
+
+:::: footer
+<https://github.com/posit-dev/positron/wiki#is-positron-for-me>
+:::
+
+## Showcase checklist
+
+Reminder! Positron just entered open Beta
+
+:::: {.columns}
+:::: {.column}
+
+- [ ] Panels
+- [ ] Command Palette
+- [ ] Interpreter selection
+- [ ] Layout options
+- [ ] Settings
+:::
+:::: {.column}
+
+- [ ] RStudio Keymap
+- [ ] Extensions
+- [ ] Connections
+- [ ] Data Explorer
+
+:::
+:::

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+$colors: (
+  "white": #FFFFFF,
+  "black": #111111,
+  "teal": #27F7F7,
+  "blue": #3976B3
+);
+
+/*-- scss:functions --*/
+
+@function theme-color($color) {
+  @return map-get($colors, $color);
+}
+
+/*-- scss:defaults --*/
+
+$body-bg: theme-color("black");
+$body-color: theme-color("teal");
+$link-color: theme-color("blue");
+
+$font-family-sans-serif: "Share Tech Mono", Consolas, monaco, monospace;
+
+
+/*-- scss:rules --*/
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  color: theme-color("blue");
+}
+
+.reveal {
+
+  h1,
+  h2 {
+    font-family: "Orbitron", sans-serif;
+  }
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
